@@ -19,7 +19,7 @@ log = "0.4.17"
 
 # Parity
 codec = { package = "parity-scale-codec", version = "3.1", features = ["derive"] }
-jsonrpsee = { version = "0.14.0", features = ["server", "macros"] }
+jsonrpsee = { version = "=0.13.1", features = ["server", "macros"] }
 
 # Substrate
 sc-basic-authorship = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.23" }
@@ -74,7 +74,7 @@ fp-storage = { git = "https://github.com/purestake/frontier", branch = "moonbeam
 frontier-template-runtime = { path = "../runtime", default-features = false, features = ["std"] }
 
 [build-dependencies]
-substrate-build-script-utils = { version = "3.0.0", git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.23" }
+substrate-build-script-utils = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.23" }
 
 [features]
 default = ["aura", "with-rocksdb-weights"]
