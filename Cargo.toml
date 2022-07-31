@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "node",
+    "runtime",
+]
+resolver = "2"
